@@ -7,11 +7,11 @@ This code can be tested and compiled by going to the following link and pasting 
 
 .include "beta.uasm"
 
-        BR(STEP1)   // start execution with Step 1
+	BR(STEP1)   // start execution with Step 1
 
-        // the array to be sorted
-        A:      LONG(10) LONG(56) LONG(27) LONG(69) LONG(73) LONG(99)
-                LONG(44) LONG(36) LONG(10) LONG(72) LONG(71) LONG(1)
+	// the array to be sorted
+	A:      LONG(10) LONG(56) LONG(27) LONG(69) LONG(73) LONG(99)
+			LONG(44) LONG(36) LONG(10) LONG(72) LONG(71) LONG(1)
 
 ALEN = (. - A)/4    // determine number of elements in A
 
